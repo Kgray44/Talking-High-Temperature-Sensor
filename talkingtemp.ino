@@ -15,7 +15,7 @@ bool extraactive = false;
 bool off = false;
 bool announced = false;
 
-DFRobot_RGBLCD1602 lcd(/*lcdCols*/16,/*lcdRows*/2);  //16 characters and 2 lines of show
+DFRobot_RGBLCD1602 lcd(/*RGBAddr*/0x2D,/*lcdCols*/16,/*lcdRows*/2);  //16 characters and 2 lines of show
 DFRobot_MAX31855 max31855;
 SoftwareSerial df1101sSerial(9, 10);  //RX  TX
 DFRobot_DF1101S df1101s;
